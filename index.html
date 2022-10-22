@@ -1,121 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>Weather Dashboard</title>
-  <link rel="icon" type="image/x-icon" href="./assets/img/weather.webp">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/weather.webp" />
+  </head>
 
   <!-- Header nav bar -->
-<header>
-  <nav class="navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">
-      <img src="./assets/img/weather.webp" width="30" height="30" class="d-inline-block align-top" alt="sun with cloud in front of it">
-      Weather Dashboard
-    </a>
-  </nav>
-</header>
+  <header>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img
+          src="./assets/img/weather.webp"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt="sun with cloud in front of it"
+        />
+        Weather Dashboard
+      </a>
+    </nav>
+  </header>
 
+  <!--The body has a full container that is divided into two rows. The first row only spans a 1/4 of the page and that is where the search bar and results are kept. The remaining 3/4 shows the today's date and 5 day forecast cards.-->
+  <body>
+    <main class="container-fluid">
+      <div class="row">
+        <!--Search for a City left bar-->
+        <aside class="col-3">
+          <form>
+            <div class="form-group">
+              <label for="searchCity">Search for a City</label>
+              <input
+                type="city"
+                class="form-control"
+                id="searchCity"
+                placeholder="New York City"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+          </form>
+        </aside>
 
-<!--
-  TODO: Two separate columns, one with the sidebar "search for a city" content. Second column has the forecast information.
-  TODO: The today's date card should take up the entire width of the container and then the card deck below should even out. 
-  TODO: Title of 5-Day Forecast needs to be above the forecast cards.
-  TODO: The Search bar should populate buttons (yes buttons because they needs ot be clicked and called again) for the previous searched city forecast.
--->
+        <div class="col-9">
+          <!--Today's date with City Name-->
+          <div class="card mb-3">
+            <section class="card-body">
+              <h3 class="card-title">New York City (today's date)</h3>
+              <!--TODO: Add an img spot-->
+              <p class="card-temp">Temperature: 86°F</p>
+              <p class="card-wind">Wind: 3.94 MPH</p>
+              <p class="card-humidity">Humidity: 63%</p>
+            </section>
+          </div>
 
+          <!--5 Day Forecast Section-->
+          <h4>5-Day Forecast</h4>
+          <section class="card-deck">
+            <br />
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem">
+              <p class="dayOfWeek1 text-center">Monday 10/23/22</p>
+              <img class="card-img-top1" src="./assets/img/weather.webp" />
+              <div class="card-body">
+                <p class="card-temp1">Temperature: 86°F</p>
+                <p class="card-wind1">Wind: 3.94 MPH</p>
+                <p class="card-humidity1">Humidity: 63%</p>
+              </div>
+            </div>
 
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem">
+              <p class="dayOfWeek2 text-center">Monday 10/23/22</p>
+              <img class="card-img-top2" src="./assets/img/weather.webp" />
+              <div class="card-body">
+                <p class="card-temp2">Temperature: 86°F</p>
+                <p class="card-wind2">Wind: 3.94 MPH</p>
+                <p class="card-humidity2">Humidity: 63%</p>
+              </div>
+            </div>
 
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem">
+              <p class="dayOfWeek3 text-center">Monday 10/23/22</p>
+              <img class="card-img-top3" src="./assets/img/weather.webp" />
+              <div class="card-body">
+                <p class="card-temp3">Temperature: 86°F</p>
+                <p class="card-wind3">Wind: 3.94 MPH</p>
+                <p class="card-humidity3">Humidity: 63%</p>
+              </div>
+            </div>
 
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem">
+              <p class="dayOfWeek4 text-center">Monday 10/23/22</p>
+              <img class="card-img-top4" src="./assets/img/weather.webp" />
+              <div class="card-body">
+                <p class="card-temp4">Temperature: 86°F</p>
+                <p class="card-wind4">Wind: 3.94 MPH</p>
+                <p class="card-humidity4">Humidity: 63%</p>
+              </div>
+            </div>
 
-<body> 
-<!--Search for a City left bar-->
-<div class="container float-left">
-  <div class="row">
-    <div class="col-sm-4">
-      <form>
-        <div class="form-group">
-          <label for="searchCity">Search for a City</label>
-          <input type="city" class="form-control" id="searchCity" placeholder="New York City">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem">
+              <p class="dayOfWeek5 text-center">Monday 10/23/22</p>
+              <img class="card-img-top5" src="./assets/img/weather.webp" />
+              <div class="card-body">
+                <p class="card-temp5">Temperature: 86°F</p>
+                <p class="card-wind5">Wind: 3.94 MPH</p>
+                <p class="card-humidity5">Humidity: 63%</p>
+              </div>
+            </div>
+          </section>
         </div>
-      
-        <button type="submit" class="btn btn-primary">Search</button>
-      </form>
-    </div>
-
-    <!--Today's date with City Name-->
-    <div class="card mb-3">
-      <!-- <img class="card-img-top" src="./assets/img/weather.webp"> -->
-      <div class="card-body">
-        <h5 class="card-title">New York City (today's date)</h5>
-        <p class="card-temp1">Temperature: 86°F</p>
-        <p class="card-wind1">Wind: 3.94 MPH</p>
-        <p class="card-humidity1">Humidity: 63%</p>
       </div>
-    </div>
-
-    <!--5 Day Forecast Section-->
-    <h3>5-Day Forecast</h3>
-
-    <div class="card-deck">
-      <br>
-      <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-        <p class="dayOfWeek1 text-center">Monday 10/23/22</p>
-        <img class="card-img-top" src="./assets/img/weather.webp">
-        <div class="card-body">
-          <p class="card-temp1">Temperature: 86°F</p>
-          <p class="card-wind1">Wind: 3.94 MPH</p>
-          <p class="card-humidity1">Humidity: 63%</p>
-        </div>
-      </div>
-
-      <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-        <p class="dayOfWeek2 text-center">Monday 10/23/22</p>
-        <img class="card-img-top" src="./assets/img/weather.webp">
-        <div class="card-body">
-          <p class="card-temp2">Temperature: 86°F</p>
-          <p class="card-wind2">Wind: 3.94 MPH</p>
-          <p class="card-humidity2">Humidity: 63%</p>
-        </div>
-      </div>
-
-      <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-        <p class="dayOfWeek3 text-center">Monday 10/23/22</p>
-        <img class="card-img-top" src="./assets/img/weather.webp">
-        <div class="card-body">
-          <p class="card-temp3">Temperature: 86°F</p>
-          <p class="card-wind3">Wind: 3.94 MPH</p>
-          <p class="card-humidity3">Humidity: 63%</p>
-        </div>
-      </div>
-
-      <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-        <p class="dayOfWeek4 text-center">Monday 10/23/22</p>
-        <img class="card-img-top" src="./assets/img/weather.webp">
-        <div class="card-body">
-          <p class="card-temp4">Temperature: 86°F</p>
-          <p class="card-wind4">Wind: 3.94 MPH</p>
-          <p class="card-humidity4">Humidity: 63%</p>
-        </div>
-      </div>
-
-      <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-        <p class="dayOfWeek5 text-center">Monday 10/23/22</p>
-        <img class="card-img-top" src="./assets/img/weather.webp">
-        <div class="card-body">
-          <p class="card-temp5">Temperature: 86°F</p>
-          <p class="card-wind5">Wind: 3.94 MPH</p>
-          <p class="card-humidity5">Humidity: 63%</p>
-        </div>
-      </div>
-
-    </div>
-  
-</div>
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./assets/js/script.js"></script>

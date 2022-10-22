@@ -1,0 +1,39 @@
+// This is a document that provides space for extra notes or somewhere to put code that I need to keep but don't want it to get in the way.
+
+
+This is for the var/let components of the script
+
+var dayOfWeek
+var card-temp
+var card-wind
+var card-humidity
+
+var dayOfWeek1
+var card-temp1
+var card-wind1
+var card-humidity1
+
+var dayOfWeek2
+var card-temp2
+var card-wind2
+var card-humidity2
+
+var dayOfWeek3
+var card-temp3
+var card-wind3
+var card-humidity3
+
+var dayOfWeek4
+var card-temp4
+var card-wind4
+var card-humidity4
+
+var dayOfWeek5
+var card-temp5
+var card-wind5
+var card-humidity5
+
+var dayOfWeek
+var card-temp
+var card-wind
+var card-humidity
