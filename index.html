@@ -28,6 +28,7 @@
       </a>
     </nav>
   </header>
+  <br>
 
   <!--The body has a full container that is divided into two rows. The first row only spans a 1/4 of the page and that is where the search bar and results are kept. The remaining 3/4 shows the today's date and 5 day forecast cards.-->
   <body>
@@ -37,7 +38,7 @@
         <aside class="col-3">
           <form>
             <div class="form-group">
-              <label for="searchCity">Search for a City</label>
+              <h3 for="searchCity">Search for a City</h3>
               <input
                 type="city"
                 class="form-control"
@@ -47,15 +48,20 @@
             </div>
             <button type="submit" class="btn btn-primary">Search</button>
           </form>
+          <br>
+          <!--This is where previous search results go-->
+          <div class="alert alert-primary text-center" role="alert">
+            Salt Lake City
+          </div>
         </aside>
 
         <div class="col-9">
           <!--Today's date with City Name-->
           <div class="card mb-3">
-            <section class="card-body">
-              <h3 class="card-title">New York City (today's date)</h3>
+            <section class="card-body text-white bg-dark">
+              <h3 class="card-title">New York City: Monday 10/23/22</h3>
               <!--TODO: Add an img spot-->
-              <p class="card-temp">Temperature: 86°F</p>
+              <p class="card-temp">Temp: 86°F</p>
               <p class="card-wind">Wind: 3.94 MPH</p>
               <p class="card-humidity">Humidity: 63%</p>
             </section>
@@ -69,7 +75,7 @@
               <p class="dayOfWeek1 text-center">Monday 10/23/22</p>
               <img class="card-img-top1" src="./assets/img/weather.webp" />
               <div class="card-body">
-                <p class="card-temp1">Temperature: 86°F</p>
+                <p class="card-temp1">Temp: 86°F</p>
                 <p class="card-wind1">Wind: 3.94 MPH</p>
                 <p class="card-humidity1">Humidity: 63%</p>
               </div>
@@ -79,7 +85,7 @@
               <p class="dayOfWeek2 text-center">Monday 10/23/22</p>
               <img class="card-img-top2" src="./assets/img/weather.webp" />
               <div class="card-body">
-                <p class="card-temp2">Temperature: 86°F</p>
+                <p class="card-temp2">Temp: 86°F</p>
                 <p class="card-wind2">Wind: 3.94 MPH</p>
                 <p class="card-humidity2">Humidity: 63%</p>
               </div>
@@ -89,7 +95,7 @@
               <p class="dayOfWeek3 text-center">Monday 10/23/22</p>
               <img class="card-img-top3" src="./assets/img/weather.webp" />
               <div class="card-body">
-                <p class="card-temp3">Temperature: 86°F</p>
+                <p class="card-temp3">Temp: 86°F</p>
                 <p class="card-wind3">Wind: 3.94 MPH</p>
                 <p class="card-humidity3">Humidity: 63%</p>
               </div>
@@ -99,7 +105,7 @@
               <p class="dayOfWeek4 text-center">Monday 10/23/22</p>
               <img class="card-img-top4" src="./assets/img/weather.webp" />
               <div class="card-body">
-                <p class="card-temp4">Temperature: 86°F</p>
+                <p class="card-temp4">Temp: 86°F</p>
                 <p class="card-wind4">Wind: 3.94 MPH</p>
                 <p class="card-humidity4">Humidity: 63%</p>
               </div>
@@ -109,7 +115,7 @@
               <p class="dayOfWeek5 text-center">Monday 10/23/22</p>
               <img class="card-img-top5" src="./assets/img/weather.webp" />
               <div class="card-body">
-                <p class="card-temp5">Temperature: 86°F</p>
+                <p class="card-temp5">Temp: 86°F</p>
                 <p class="card-wind5">Wind: 3.94 MPH</p>
                 <p class="card-humidity5">Humidity: 63%</p>
               </div>

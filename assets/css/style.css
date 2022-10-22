@@ -1,0 +1,8 @@
+body {
+  background-color: rgb(221, 221, 221);
+}
+
+.alert:hover {
+  background-color: rgb(195, 217, 238);
+  cursor: pointer;
+}
