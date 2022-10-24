@@ -1,5 +1,12 @@
 body {
-  background-color: rgb(221, 221, 221);
+  background-color: #343a40;
+  background-image: url('https://source.unsplash.com/1600x900/?nature');
+}
+
+h3 span {
+  background-color: #343a40;
+  border-radius: .5rem;
+  color: white;
 }
 
 .alert:hover {
