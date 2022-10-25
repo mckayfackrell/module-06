@@ -1,17 +1,6 @@
 // This is a document that provides space for extra notes or somewhere to put code that I need to keep but don't want it to get in the way.
 
 
-// This is if I have time it would be fun to change the background of the weather app to display an image from the city the user is searching for.
-
-// function getSearchResults(city = 'salt lake city') {
-//   var url = `https://imsea.herokuapp.com/api/1?q=${city}`;
-//   return fetch(url).then(function(res) {
-//     if (!res.ok) throw new Error(res.statusText);
-//     return res.json();
-//   });
-// }
-
-
 This is for the var/let components of the script
 
 var dayOfWeek
