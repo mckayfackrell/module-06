@@ -27,7 +27,7 @@ let weather = {
     const { speed } = data.wind;
     console.log(name, icon, temp, humidity, speed);
     document.querySelector(".city").innerText = name;
-    // document.querySelector(".icon").src = "https://openweathermap.org/img/wn/10d@2x.png";// "https://openweathermap.org/img/wn/" + icon + "@2x.png";
+    document.querySelector("#icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
     document.querySelector(".temp").innerText = "Temp: " + temp + " °F";
     document.querySelector(".humidity").innerText =
       "Humidity: " + humidity + "%";

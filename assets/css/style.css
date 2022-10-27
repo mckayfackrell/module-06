@@ -1,6 +1,7 @@
 body {
   background-color: #343a40;
   background-image: url('https://source.unsplash.com/1600x900/?nature');
+  background-repeat: no-repeat;
 }
 
 h3 span {
@@ -12,4 +13,10 @@ h3 span {
 .alert:hover {
   background-color: rgb(195, 217, 238);
   cursor: pointer;
+}
+
+#icon {
+  width: 5rem;
+  height:5rem;
+  margin-right:5rem;
 }
