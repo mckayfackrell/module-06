@@ -27,26 +27,26 @@ let weather = {
     const { speed } = data.wind;
     console.log(name, icon, temp, humidity, speed);
     document.querySelector(".city").innerText = name;
-    document.querySelector("#icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
+    document.querySelector("#icon").src =
+      "https://openweathermap.org/img/wn/" + icon + ".png";
     document.querySelector(".temp").innerText = "Temp: " + temp + " °F";
     document.querySelector(".humidity").innerText =
       "Humidity: " + humidity + "%";
     document.querySelector(".speed").innerText = "Wind: " + speed + " MPH";
   },
-  search: function (){
+  search: function () {
     this.fetchWeather(document.querySelector(".form-control").value);
-  }
+  },
 };
-document.querySelect(".btn-primary").addEventListener("click", function() {
+document.querySelect(".btn-primary").addEventListener("click", function () {
   weather.search();
 });
 
-// weather.fetchWeather("draper");
+weather.fetchWeather("draper");
 
 
 
-
-
+event.preventDefault();
 //   .then(response => response.json())
 //   .then(response => console.log(response))
 //   .catch(err => console.error(err));
@@ -57,7 +57,11 @@ document.querySelect(".btn-primary").addEventListener("click", function() {
 
 // var APIKey = "ea18aa3b77d0e7dd90319c2b59567cb8";
 // var city;
-// var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey;
+var queryURL =
+  "http://api.openweathermap.org/data/2.5/forecast?q=" +
+  city +
+  "&appid=" +
+  APIKey;
 
 // fetch(queryURL)
 // console.log(queryURL)

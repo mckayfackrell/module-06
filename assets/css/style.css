@@ -1,12 +1,12 @@
 body {
   background-color: #343a40;
-  background-image: url('https://source.unsplash.com/1600x900/?nature');
+  background-image: url("https://source.unsplash.com/1600x900/?nature");
   background-repeat: no-repeat;
 }
 
 h3 span {
   background-color: #343a40;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   color: white;
 }
 
@@ -17,6 +17,6 @@ h3 span {
 
 #icon {
   width: 5rem;
-  height:5rem;
-  margin-right:5rem;
+  height: 5rem;
+  margin-right: 5rem;
 }
