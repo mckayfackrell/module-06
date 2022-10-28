@@ -22,7 +22,7 @@ let weather = {
   },
   displayWeather: function (data) {
     const { name } = data;
-    const { icon, description } = data.weather[0];
+    const { icon } = data.weather[0];
     const { temp, humidity } = data.main;
     const { speed } = data.wind;
     console.log(name, icon, temp, humidity, speed);
@@ -33,9 +33,20 @@ let weather = {
       "Humidity: " + humidity + "%";
     document.querySelector(".speed").innerText = "Wind: " + speed + " MPH";
   },
+  search: function (){
+    this.fetchWeather(document.querySelector(".form-control").value);
+  }
 };
+document.querySelect(".btn-primary").addEventListener("click", function() {
+  weather.search();
+});
 
-weather.fetchWeather("draper");
+// weather.fetchWeather("draper");
+
+
+
+
+
 //   .then(response => response.json())
 //   .then(response => console.log(response))
 //   .catch(err => console.error(err));
