@@ -38,9 +38,9 @@ let weather = {
     this.fetchWeather(document.querySelector(".form-control").value);
   },
 };
-document.querySelect(".btn-primary").addEventListener("click", function () {
-  weather.search();
-});
+//document.querySelect(".btn-primary").addEventListener("click", function () {
+//  weather.search();
+//});
 
 weather.fetchWeather("draper");
 
