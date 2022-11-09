@@ -9,6 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Weather Dashboard</title>
     <link rel="icon" type="image/x-icon" href="" />
   </head>
@@ -37,11 +38,11 @@
         <!--Search for a City left bar-->
         <aside class="col-3">
           <form>
-            <div class="form-group">
-              <h3 for="searchCity"><span>Search for a City</span></h3>
+            <div class="search form-group">
+              <h3 class="searchCity"><span>Search for a City</span></h3>
               <input
-                type="city"
-                class="form-control"
+                type="text"
+                class="search-bar"
                 id="searchCity"
                 placeholder="New York City"
               />
@@ -59,9 +60,9 @@
           <!--Today's date with City Name-->
           <div class="card mb-3">
             <section class="card-body text-white bg-dark">
-              <h3 class="card-title city">New York City</h3>
+              <h3 class="card-title city">City</h3>
               <h3 id="currentDay"></h3>
-              <img class="card-img-top" src="" ; alt="" id="icon" />
+              <img class="card-img-top" src="https://openweathermap.org/img/wn/04d.png" ; alt="" id="icon" />
               <p class="temp"></p>
               <p class="speed"></p>
               <p class="humidity"></p>
@@ -127,6 +128,6 @@
     </main>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/weather.js"></script>
   </body>
 </html>
