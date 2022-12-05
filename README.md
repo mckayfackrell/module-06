@@ -5,6 +5,8 @@
 This weather dashboard application allows a user to get a 5-day weather forecast for any city.
 
 ## URL and Screenshot
+https://mckayfackrell.github.io/module-06-Weather-Dashboard/
+<img width="1462" alt="Screenshot 2022-12-05 at 14 43 39" src="https://user-images.githubusercontent.com/110206514/205748696-47410e52-c268-4850-9bde-d0fbe8cf925a.png">
 
 ## Usage
 
